@@ -77,14 +77,39 @@ header img {
 
 #container {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 60%;
-  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+}
+button {
+  padding: 15px;
+  background: tomato;
+  color: hsla(30, 1%, 24%);
+  font-size: 5rem;
+  font-weight: 550;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  filter: grayscale();
+  transition: filter 500ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+button:hover {
+  filter: grayscale(0);
+}
+#container {
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
 }
 
-@media screen and(max-width: 700px) {
+@media screen and (max-width: 700px) {
   #container {
     min-width: 100%;
   }
